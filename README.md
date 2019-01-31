@@ -33,7 +33,7 @@ npx eleventy
 
 Or build automatically when a template changes:
 ```
-npx eleventy --watch
+npx eleventy --serve --port=5280
 ```
 
 Or in debug mode:
