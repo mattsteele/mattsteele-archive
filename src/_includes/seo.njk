@@ -1,0 +1,53 @@
+{%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(site.url) }}{%- endset -%}
+{%- set isPost = layout == 'post' -%}
+
+
+{# Auto-Generate a Description for Posts  #}
+{%- set currentPage = collections.all | currentPage(page) -%}
+{%- set autoDescription = currentPage.templateContent | excerpt | safe | striptags -%}
+
+
+{# Page-Specific #}
+<meta name="description" content="{{ description or autoDescription or site.description }}">
+<meta property="og:title" content="{{ title or site.title }}">
+<meta property="og:description" content="{{ description or autoDescription or site.description }}">
+<meta property="og:url" content="{{ absolutePageUrl }}">
+<meta property="og:image" content="{%- if image -%}{{ image | media(page) | url | absoluteUrl(site.url) }}{%- else -%}{{ author.avatar | url | absoluteUrl(site.url) }}{%- endif -%}">
+<meta name="twitter:card" content="{% if isPost -%}summary_large_image{% else %}summary{% endif %}">
+
+{# Posts get additional meta tags #}
+{%- if isPost -%}
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="{{ page.date | iso }}">
+{%- endif -%}
+
+{# General #}
+<meta name="author" content="{{ author.name }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta name="twitter:site" content="@{{ author.social.twitter.name }}">
+<meta name="twitter:creator" content="@{{ author.social.twitter.name }}">
+
+
+<link rel="canonical" href="{{ absolutePageUrl }}">
+
+{# JSON LD #}
+<script type="application/ld+json">
+    {
+        "name":"{{ author.name }}",
+        "description":"{{ site.description }}",
+        "author": {
+            "@type":"Person",
+            "name":"{{ author.name }}"
+        },
+        "@type":"WebSite",
+        "url":"{{ site.url }}",
+        "image":"{{ site.url }}/assets/images/logo.jpg",
+        "headline":"{{ site.title }}",
+        "sameAs":[
+            "{{ author.social.twitter.url }}",
+            "{{ author.social.github.url }}"
+        ],
+        "@context":"http://schema.org"
+    }
+</script>

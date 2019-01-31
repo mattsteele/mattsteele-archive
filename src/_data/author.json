@@ -1,0 +1,19 @@
+{
+  "name": "Matt Steele",
+  "email": "matt@matt-steele.com",
+  "avatar": "/assets/images/avatar.jpg",
+  "social": {
+      "twitter": {
+          "name": "mattsteeele",
+          "url": "https://twitter.com/mattsteeele"
+      },
+      "github": {
+          "name": "mattsteele",
+          "url": "https://github.com/mattsteele"
+      },
+      "codepen": {
+          "name": "mattsteele",
+          "url": "https://codepen.io/mattsteele/"
+      }
+  }
+}

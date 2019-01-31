@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+tags:
+  - nav
+navtitle: Articles
+permalink: /posts/
+templateClass: tmpl-posts
+---
+
+<h1>Articles Listing</h1>
+
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}

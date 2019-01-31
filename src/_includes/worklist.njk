@@ -1,0 +1,14 @@
+<ol reversed class="worklist" style="counter-reset: start-from {{ worklist.length + 1 }}">
+{% for work in worklist | reverse %}
+  <li class="worklist-item{% if work.url == url %} worklist-item-active{% endif %}">
+    <a href="{{ work.url | url }}" class="worklist-link">{% if work.data.title %}{{ work.data.title }}{% else %}<code>{{ work.url }}</code>{% endif %}</a>
+    <time class="worklist-date" datetime="{{ work.date | htmlDateString }}">{{ work.date | readableDate }}</time>
+    {% for tag in work.data.tags %}
+      {%- if tag != "work" -%}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+      {%- endif -%}
+    {% endfor %}
+  </li>
+{% endfor %}
+</ol>
