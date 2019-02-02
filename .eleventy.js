@@ -3,18 +3,43 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
+
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
 
+
+  // eleventyConfig.addLayoutAlias(from, to)
+  eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
+  eleventyConfig.addLayoutAlias("home", "layouts/home.njk");
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("work", "layouts/work.njk");
 
+
+
+  // PASSTHROUGH:
+  //// Specify files or directories for Eleventy to copy into /dist.
+  eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy("src/assets/css");
+  eleventyConfig.addPassthroughCopy('src/site.webmanifest');
+  eleventyConfig.addPassthroughCopy('src/robots.txt');
+
+
+
+  // COLLECTIONS:
+  //// Group content & create a collections object to accesss
+  //// ie: for tags in collections.tagList
+  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+
+
+
+  // UNIVERSAL FILTERS:
+  //// Custom filters to modify content.
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
 
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd');
   });
@@ -28,7 +53,6 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-
   eleventyConfig.addFilter("currentPage", (allPages, currentPage) => {
     const matches = allPages.filter(
         page => page.inputPath === currentPage.inputPath
@@ -39,6 +63,14 @@ module.exports = function(eleventyConfig) {
     return null
   });
 
+  eleventyConfig.addFilter('media', (filename, page) => {
+    const path = page.inputPath.split('/')
+    if (path.length && path.includes('posts')) {
+        const subdir = path[path.length - 2]
+        return `/assets/media/${subdir}/${filename}`
+    }
+    return filename
+  });
 
   eleventyConfig.addFilter("excerpt", (content) => {
     const excerptMinimumLength = 80
@@ -76,14 +108,15 @@ module.exports = function(eleventyConfig) {
     return content.substring(0, excerptEnd)
   });
 
-  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+  eleventyConfig.addCollection('nav', function(collection) {
+    return collection.getFilteredByTag('nav').sort(function(a, b) {
+        return a.data.navorder - b.data.navorder
+    })
+  });
 
-  eleventyConfig.addPassthroughCopy("src/img");
-  eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy('src/site.webmanifest')
-  eleventyConfig.addPassthroughCopy('src/robots.txt')
 
-  /* Markdown Plugins */
+
+  // MARKDOWN PLUGINS
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
   let options = {
@@ -108,12 +141,8 @@ module.exports = function(eleventyConfig) {
       "html"
     ],
 
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about it.
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for URLs (it does not affect your file structure)
+    // GENERAL SETTINGS
     pathPrefix: "/",
-
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",

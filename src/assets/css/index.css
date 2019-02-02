@@ -217,3 +217,55 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link:visited {
   color: #aaa;
 }
+
+.fade-in {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+      animation-duration: 0s !important;
+      transition-duration: 0s !important;
+  }
+}
+
+
+body {
+  -webkit-animation: fadein .8s;
+     -moz-animation: fadein .8s;
+      -ms-animation: fadein .8s;
+       -o-animation: fadein .8s;
+          animation: fadein .8s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+.hero{
+  height: 100vh;
+  padding-top: 15%;
+  padding-left: 5%;
+}
+
+.hero h1{
+  font-size: 8em;
+  text-transform: uppercase;
+}

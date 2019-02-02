@@ -40,3 +40,8 @@ Or in debug mode:
 ```
 DEBUG=* npx eleventy
 ```
+
+### Todos:
+[] Add images in post directories
+[] Add Gulp asset pipeline
+[x] Add /feed.xml RSS

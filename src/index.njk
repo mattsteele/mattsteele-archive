@@ -2,7 +2,17 @@
 layout: layouts/home.njk
 ---
 
-<h1>Latest 3 Posts</h1>
+
+<div class="hero">
+  <div class="fade-in">
+    <h1>Matt Steele</h1>
+  </div>
+  <h2>I'm a Web Developer in Denver, Colorado. I work in JavaScript, Node, Vue &amp; Angular.</h2>
+</div>
+
+
+
+<h1>Articles</h1>
 
 {% set postslist = collections.posts | head(-3) %}
 {% include "postslist.njk" %}
@@ -11,6 +21,9 @@ layout: layouts/home.njk
 
 
 <hr />
+
+<h1>Work</h1>
+
 {% set worklist = collections.work | head(-3) %}
 {% include "worklist.njk" %}
 

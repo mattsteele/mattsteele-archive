@@ -1,6 +1,6 @@
 {
   "name": "matt-steele",
-  "version": "5.0.0",
+  "version": "1.0.0",
   "description": "Matt Steele - Web Application Developer in Denver, Colorado.",
   "scripts": {
     "build": "npx eleventy",
