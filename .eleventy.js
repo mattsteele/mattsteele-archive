@@ -19,9 +19,8 @@ module.exports = function(eleventyConfig) {
 
   // PASSTHROUGH:
   //// Specify files or directories for Eleventy to copy into /dist.
-  eleventyConfig.addPassthroughCopy("src/assets/images");
-  eleventyConfig.addPassthroughCopy("src/assets/js");
-  eleventyConfig.addPassthroughCopy("src/assets/css");
+  // eleventyConfig.addPassthroughCopy("src/assets/images");
+  // eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
 

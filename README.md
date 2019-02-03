@@ -33,7 +33,7 @@ npx eleventy
 
 Or build automatically when a template changes:
 ```
-npx eleventy --serve --port=5280
+npm run start
 ```
 
 Or in debug mode:
@@ -43,5 +43,5 @@ DEBUG=* npx eleventy
 
 ### Todos:
 [] Add images in post directories
-[] Add Gulp asset pipeline
+[x] Add Gulp asset pipeline
 [x] Add /feed.xml RSS
