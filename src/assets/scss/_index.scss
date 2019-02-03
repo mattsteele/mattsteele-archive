@@ -1,17 +1,17 @@
 :root {
-  --red: #C5004A;
-  --darkred: #7F0036;
-  --lightgray: #e0e0e0;
-  --gray: #C0C0C0;
-  --lightgray: #f7f7f9;
-  --darkgray: #333;
-  --navy: #17050F;
-  --blue: #082840;
-  --white: #fff;
+  --blue-one: #1E2E3E;
+  --blue-two: #507796;
+  --blue-three: #2A94C8;
+
+  --red-one: #B33D40;
+  --red-two: #D1625B;
+
+  --gray-one: #e0e0e0;
+  --gray-two: #BDC3C7;
 }
 
 body {
-  border: 10px solid pink;
+  border: 10px solid var(--red-two);
 }
 * {
   box-sizing: border-box;
@@ -22,7 +22,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: var(--darkgray);
-  background-color: var(--lightgray);
+  background-color: var(--gray-one);
 }
 p:last-child {
   margin-bottom: 0;
@@ -37,10 +37,10 @@ p,
   line-height: 1.45;
 }
 a[href] {
-  color: var(--blue);
+  color: var(--blue-one);
 }
 a[href]:visited {
-  color: var(--navy);
+  color: var(--blue-two);
 }
 main {
   padding: 1rem;
@@ -49,7 +49,7 @@ main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-bottom: 1px dashed var(--gray-one);
 }
 header:after {
   content: "";
@@ -185,7 +185,7 @@ pre {
   font-size: 0.625em; /* 10px /16 */
   padding: 2px 4px;
   margin-left: 0.8em; /* 8px /10 */
-  background-color: var(--red);
+  background-color: var(--blue-three);
   color: var(--white);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;

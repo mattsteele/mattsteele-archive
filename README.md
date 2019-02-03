@@ -4,7 +4,7 @@ My personal site. A static site built using [11ty](https://github.com/11ty/eleve
 
 Hosted on [Netlify](https://eleventy-base-blog.netlify.com/).
 
-## Getting Started
+## To Start:
 
 ### 1. Clone this repository:
 
@@ -13,32 +13,22 @@ git clone https://github.com/mattsteele/matt-steele.git
 ```
 
 
-### 2. Navigate to the directory
+### 2. Navigate to the directory:
 
 ```
 cd matt-steele
 ```
 
-### 3. Install dependencies
+### 3. Install dependencies:
 
 ```
 npm install
 ```
 
-### 5. Run Eleventy
+### 5. Build, serve & watch:
 
-```
-npx eleventy
-```
-
-Or build automatically when a template changes:
 ```
 npm run start
-```
-
-Or in debug mode:
-```
-DEBUG=* npx eleventy
 ```
 
 ### Todos:
