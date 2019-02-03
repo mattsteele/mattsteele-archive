@@ -26,21 +26,11 @@ gulp.task('assets', gulp.parallel(
 ));
 
 
-/*
-  Let's build this sucker, without getting data from online sources
-*/
-gulp.task('build:local', gulp.series(
-  'clean-build',
-  'generate',
-  'assets'
-));
-
 
 /*
   Let's gwt the data we need and then build this sucker.
 */
 gulp.task('build', gulp.series(
-  // 'get:data',
   'generate',
   'assets'
 ));

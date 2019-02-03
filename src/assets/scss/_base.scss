@@ -1,0 +1,120 @@
+:root {
+  --body: #f7f7f9;
+
+
+  --blue-one: #1E2E3E;
+  --blue-two: #507796;
+  --blue-three: #2A94C8;
+
+  --red-one: #B33D40;
+  --red-two: #D1625B;
+
+  --gray-one: #e0e0e0;
+  --gray-two: #BDC3C7;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: var(--darkgray);
+  background-color: var(--body);
+}
+
+body {
+  font-family: 'Trebuchet MS', Trebuchet MS, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Georgia', serif;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+p,
+.tmpl-post li,
+img {
+  max-width: 37.5em; /* 600px /16 */
+}
+p,
+.tmpl-post li {
+  line-height: 1.45;
+}
+a[href] {
+  color: var(--red-one);
+}
+a[href]:visited {
+  color: var(--red-one);
+}
+main {
+  padding: 1rem;
+}
+main :first-child {
+  margin-top: 0;
+}
+header {
+  border-bottom: 1px dashed var(--gray-one);
+}
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+pre,
+code {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  line-height: 1.5;
+}
+pre {
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: 1em;
+  margin: .5em 0;
+  background-color: #f6f6f6;
+}
+.highlight-line {
+  display: block;
+  padding: 0.125em 1em;
+  text-decoration: none; /* override del, ins, mark defaults */
+  color: inherit; /* override del, ins, mark defaults */
+}
+
+/* allow highlighting empty lines */
+.highlight-line:empty:before {
+  content: " ";
+}
+/* avoid double line breaks when using display: block; */
+.highlight-line + br {
+  display: none;
+}
+
+.highlight-line-isdir {
+  color: #b0b0b0;
+  background-color: #222;
+}
+.highlight-line-active {
+  background-color: #444;
+  background-color: hsla(0, 0%, 27%, .8);
+}
+.highlight-line-add {
+  background-color: #45844b;
+}
+.highlight-line-remove {
+  background-color: #902f2f;
+}

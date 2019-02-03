@@ -1,47 +1,67 @@
-const { DateTime } = require("luxon");
+const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+
 
 module.exports = function(eleventyConfig) {
 
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.addPlugin(pluginRss)
+  eleventyConfig.addPlugin(pluginSyntaxHighlight)
+  eleventyConfig.setDataDeepMerge(true)
 
 
   // eleventyConfig.addLayoutAlias(from, to)
-  eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
-  eleventyConfig.addLayoutAlias("home", "layouts/home.njk");
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-  eleventyConfig.addLayoutAlias("work", "layouts/work.njk");
+  eleventyConfig.addLayoutAlias("base", "layouts/base.njk")
+  eleventyConfig.addLayoutAlias("home", "layouts/home.njk")
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk")
+  eleventyConfig.addLayoutAlias("work", "layouts/work.njk")
 
 
 
   // PASSTHROUGH:
   //// Specify files or directories for Eleventy to copy into /dist.
-  // eleventyConfig.addPassthroughCopy("src/assets/images");
-  // eleventyConfig.addPassthroughCopy("src/assets/js");
-  eleventyConfig.addPassthroughCopy('src/site.webmanifest');
-  eleventyConfig.addPassthroughCopy('src/robots.txt');
+  // eleventyConfig.addPassthroughCopy("src/assets/images")
+  // eleventyConfig.addPassthroughCopy("src/assets/js")
+  eleventyConfig.addPassthroughCopy('src/site.webmanifest')
+  eleventyConfig.addPassthroughCopy('src/robots.txt')
 
 
 
   // COLLECTIONS:
   //// Group content & create a collections object to accesss
   //// ie: for tags in collections.tagList
-  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"))
 
+  // Collections: Posts
+  // eleventyConfig.addCollection('posts', function(collection) {
+  //   return collection
+  //       .getAllSorted()
+  //       .filter(item => item.inputPath.match(/\/posts\//) !== null)
+  //       .filter(item => item.data.permalink !== false)
+  // })
 
+  // eleventyConfig.addCollection('nav', function(collection) {
+  //   return collection.getFilteredByTag('nav').sort(function(a, b) {
+  //       return a.data.navorder - b.data.navorder
+  //   })
+  // })
+
+  // Collections: Navigation
+  eleventyConfig.addCollection('nav', function(collection) {
+    return collection.getFilteredByTag('nav').sort(function(a, b) {
+        return a.data.navorder - b.data.navorder
+    })
+  })
 
   // UNIVERSAL FILTERS:
   //// Custom filters to modify content.
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
   });
 
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd');
-  });
+    return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd')
+  })
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
@@ -50,7 +70,7 @@ module.exports = function(eleventyConfig) {
     }
 
     return array.slice(0, n);
-  });
+  })
 
   eleventyConfig.addFilter("currentPage", (allPages, currentPage) => {
     const matches = allPages.filter(
@@ -60,7 +80,7 @@ module.exports = function(eleventyConfig) {
         return matches[0]
     }
     return null
-  });
+  })
 
   eleventyConfig.addFilter('media', (filename, page) => {
     const path = page.inputPath.split('/')
@@ -69,7 +89,7 @@ module.exports = function(eleventyConfig) {
         return `/assets/media/${subdir}/${filename}`
     }
     return filename
-  });
+  })
 
   eleventyConfig.addFilter("excerpt", (content) => {
     const excerptMinimumLength = 80
@@ -105,14 +125,7 @@ module.exports = function(eleventyConfig) {
 
     const excerptEnd = findExcerptEnd(content)
     return content.substring(0, excerptEnd)
-  });
-
-  eleventyConfig.addCollection('nav', function(collection) {
-    return collection.getFilteredByTag('nav').sort(function(a, b) {
-        return a.data.navorder - b.data.navorder
-    })
-  });
-
+  })
 
 
   // MARKDOWN PLUGINS

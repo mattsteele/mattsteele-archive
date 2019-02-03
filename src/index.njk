@@ -1,7 +1,9 @@
 ---
+navorder: 1
+tags:
+  - nav
 layout: layouts/home.njk
 ---
-
 
 <div class="hero">
   <div class="fade-in">
@@ -9,22 +11,3 @@ layout: layouts/home.njk
   </div>
   <h2>I'm a Web Developer in Denver, Colorado. I work in JavaScript, Node, Vue &amp; Angular.</h2>
 </div>
-
-
-
-<h1>Articles</h1>
-
-{% set postslist = collections.posts | head(-3) %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">here</a>.</p>
-
-
-<hr />
-
-<h1>Work</h1>
-
-{% set worklist = collections.work | head(-3) %}
-{% include "worklist.njk" %}
-
-<p>More work can be found in <a href="{{ '/work/' | url }}">here</a>.</p>

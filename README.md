@@ -33,5 +33,7 @@ npm run start
 
 ### Todos:
 [] Add images in post directories
+[x] Allow navorder
+[] set nav-item-active when visiting child links
 [x] Add Gulp asset pipeline
 [x] Add /feed.xml RSS
