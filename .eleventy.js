@@ -32,20 +32,6 @@ module.exports = function(eleventyConfig) {
   //// ie: for tags in collections.tagList
   eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"))
 
-  // Collections: Posts
-  // eleventyConfig.addCollection('posts', function(collection) {
-  //   return collection
-  //       .getAllSorted()
-  //       .filter(item => item.inputPath.match(/\/posts\//) !== null)
-  //       .filter(item => item.data.permalink !== false)
-  // })
-
-  // eleventyConfig.addCollection('nav', function(collection) {
-  //   return collection.getFilteredByTag('nav').sort(function(a, b) {
-  //       return a.data.navorder - b.data.navorder
-  //   })
-  // })
-
   // Collections: Navigation
   eleventyConfig.addCollection('nav', function(collection) {
     return collection.getFilteredByTag('nav').sort(function(a, b) {
