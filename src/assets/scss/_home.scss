@@ -1,21 +1,28 @@
-.home {
-  padding: 0 1rem;
-  float: left;
-  margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
-}
-.home :link:not(:hover) {
-  text-decoration: none;
-}
+// .home {
+//   padding: 0 1rem;
+//   float: left;
+//   margin: 1rem 0; /* 16px /16 */
+//   font-size: 1em; /* 16px /16 */
+// }
+// .home :link:not(:hover) {
+//   text-decoration: none;
+// }
 
 .tmpl-home{
-  height: 100vh;
-  padding-top: 15%;
   padding-left: 5%;
+  display: flex;
+  align-items: center;
 }
 
 .hero h1{
   font-size: 6em;
   font-family: 'Trebuchet MS', Trebuchet MS, sans-serif;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: .15em;
+}
+
+.hero p{
+  font-size: 2em;
+  margin-top: 0;
 }

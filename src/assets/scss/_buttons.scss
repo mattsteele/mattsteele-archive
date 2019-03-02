@@ -1,0 +1,35 @@
+.button {
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgba(224,95,88,1);
+  padding: 12px 25px;
+  line-height: 1em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  border: none;
+  font-family: $font-sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  background-image: linear-gradient(to left,
+      transparent,
+      transparent 50%,
+      rgb(53,53,53) 50%,
+      rgb(53,53,53));
+  background-position: 99% 0;
+  background-size: 205% 100%;
+  transition: all .25s ease-in-out;
+   @media only screen and (max-width: 900px) {
+      font-size: 22px;
+      width: 100%;
+   }
+   &:hover{
+      padding: 12px 25px;
+      background-position: 0 0;
+      cursor: pointer;
+   }
+}

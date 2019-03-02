@@ -28,7 +28,7 @@ npm install
 ### 5. Build, serve & watch:
 
 ```
-npm run start
+npm run serve
 ```
 
 ### Todos:

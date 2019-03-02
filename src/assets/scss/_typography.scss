@@ -1,0 +1,219 @@
+body {
+  font-family: 'Trebuchet MS', Trebuchet MS, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Georgia', serif;
+}
+
+/* Serif font */
+$font-serif: 'Georgia', serif;
+
+.font-serif{
+  font-family:  'Georgia', serif;;
+}
+
+
+/* Sans-serif font */
+$font-sans-serif: 'Trebuchet MS', Trebuchet MS, sans-serif;
+
+.font-sans-serif{
+  font-family:  'Trebuchet MS', Trebuchet MS, sans-serif;
+}
+
+p{
+  font-size: 20px;
+  line-height: 1.7;
+  color: #363636;
+  a{
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px dashed var(--red-two);
+    transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -webkit-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    &:hover {
+      background-color: rgba(248, 223, 220, 0.8);
+    }
+    &:selection {
+      background: rgba(248, 223, 220, 0.8);
+    }
+  }
+}
+
+
+h1{
+  color: var(--blue-one);
+  font-size: 44px;
+  line-height: 1.3;
+  a{
+    color: var(--blue-two);
+    text-decoration: none;
+    &:hover{
+      color: var(--red-two);
+      text-decoration: underline;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+  font-size: 30px;
+  }
+}
+
+h2{
+  color: var(--blue-one);
+  font-size: 32px;
+  line-height: 1.3;
+  a{
+    color: var(--blue-two);
+    text-decoration: none;
+    &:hover{
+      color: var(--red-two);
+      text-decoration: underline;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    font-size: 22px;
+  }
+}
+
+h3{
+  color: var(--blue-one);
+  font-size: 28px;
+  line-height: 1.3;
+  a{
+    color: var(--blue-two);
+    text-decoration: none;
+    &:hover{
+      color: var(--red-two);
+      text-decoration: underline;
+    }
+  }
+    @media only screen and (max-width: 900px) {
+    font-size: 22px;
+  }
+}
+
+h4{
+  color: var(--blue-one);
+  font-size: 24px;
+  line-height: 1.3;
+  a{
+    color: var(--blue-two);
+    text-decoration: none;
+    &:hover{
+      color: var(--red-two);
+      text-decoration: underline;
+    }
+  }
+}
+
+h5{
+  color: var(--blue-one);
+  font-size: 20px;
+  line-height: 1.3;
+  a{
+    color: var(--blue-two);
+    text-decoration: none;
+    &:hover{
+      color: var(--red-two);
+      text-decoration: underline;
+    }
+  }
+}
+
+h6{
+  color: var(--blue-one);
+  font-size: 18px;
+  line-height: 1.3;
+  a{
+    color: var(--blue-two);
+    text-decoration: none;
+    &:hover{
+      color: var(--red-two);
+      text-decoration: underline;
+    }
+  }
+}
+
+ul li,
+ol li{
+  a{
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px dashed var(--red-two);
+    transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -webkit-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    &:hover {
+      background-color: rgba(248, 223, 220, 0.8);
+    }
+    &:selection {
+      background: rgba(248, 223, 220, 0.8);
+    }
+  }
+}
+
+
+ul{
+  font-style: normal;
+  li{
+    padding-bottom: 20px;
+  }
+}
+
+ol{
+  font-weight: normal;
+  li{
+    padding-bottom: 20px;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  padding: 30px 10px 10px 60px;
+  @media only screen and (max-width: 825px) {
+    padding: 0;
+    margin: 0 2%;
+  }
+}
+
+blockquote p {
+  font-size: 22px;
+  margin-top: 0;
+  @media only screen and (max-width: 825px) {
+    font-size: 20px;
+  }
+}
+
+blockquote em {
+  font-style: normal;
+}
+
+blockquote a{
+  color: var(--red-two);
+  text-decoration: none;
+	transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -webkit-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    &:hover {
+    	background-color: rgba(248, 223, 220, 0.8);
+    }
+    &:selection {
+  		background: rgba(248, 223, 220, 0.8);
+  	}
+}
+
+blockquote cite {
+  display: block;
+  font-family: $font-sans-serif;
+  font-style: normal;
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+

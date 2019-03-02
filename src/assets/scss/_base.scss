@@ -1,10 +1,10 @@
 :root {
   --body: #f7f7f9;
 
-
   --blue-one: #1E2E3E;
   --blue-two: #507796;
   --blue-three: #2A94C8;
+  --blue-four: #1E2E3E;
 
   --red-one: #B33D40;
   --red-two: #D1625B;
@@ -16,54 +16,62 @@
 * {
   box-sizing: border-box;
 }
+
+
 html,
 body {
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: var(--darkgray);
+  color: #363636;
   background-color: var(--body);
 }
 
 body {
-  font-family: 'Trebuchet MS', Trebuchet MS, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Georgia', serif;
+
+main{
+  flex: 1;
 }
+
 
 p:last-child {
   margin-bottom: 0;
 }
-p,
-.tmpl-post li,
-img {
-  max-width: 37.5em; /* 600px /16 */
-}
-p,
-.tmpl-post li {
-  line-height: 1.45;
-}
-a[href] {
-  color: var(--red-one);
-}
-a[href]:visited {
-  color: var(--red-one);
-}
-main {
-  padding: 1rem;
-}
-main :first-child {
-  margin-top: 0;
-}
-header {
-  border-bottom: 1px dashed var(--gray-one);
-}
-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+// p,
+// .tmpl-post li,
+//   img {
+//     max-width: 37.5em; /* 600px /16 */
+//   }
+// p,
+// .tmpl-post li {
+//   line-height: 1.45;
+// }
+// a[href] {
+//   color: var(--red-one);
+// }
+// a[href]:visited {
+//   color: var(--red-one);
+// }
+// main {
+//   padding: 1rem;
+// }
+// main :first-child {
+//   margin-top: 0;
+// }
+// header {
+//   border-bottom: 1px dashed var(--gray-one);
+// }
+// header:after {
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
 pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;

@@ -30,7 +30,7 @@ module.exports = function(eleventyConfig) {
   // COLLECTIONS:
   //// Group content & create a collections object to accesss
   //// ie: for tags in collections.tagList
-  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"))
+  eleventyConfig.addCollection("", require("./_11ty/getTagList"))
 
   // Collections: Navigation
   eleventyConfig.addCollection('nav', function(collection) {

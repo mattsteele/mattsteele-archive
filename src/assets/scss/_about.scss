@@ -1,0 +1,83 @@
+.tmpl-about{
+  margin: 8em auto;
+  max-width: 840px;
+}
+
+.floating-box__wrapper{
+  display: grid;
+  margin-bottom: 5em;
+}
+
+.floating-box{
+  height: 422px;
+  width: 460px;
+  background: var(--blue-one);
+  margin-left: 18%;
+  @media only screen and (max-width: 530px) {
+      margin: 0 auto;
+      width: 90vw;
+  }
+}
+
+.floating-box-text{
+  float: left;
+  padding: 50px 50px 50px 50px;
+  h2{
+      color: white;
+      font-family: $font-sans-serif;
+      text-transform: uppercase;
+      margin-bottom: .25em;
+      font-weight: 200;
+      letter-spacing: 2px;
+      font-size: 26px;
+  }
+  h3{
+      color: white;
+      font-family: $font-sans-serif;
+      margin-top: 0;
+      font-size: 16px;
+      font-weight: 200;
+  }
+  hr{
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+}
+
+.floating-box-image{
+  float: left;
+  margin-top: -38.9%;
+  margin-left: 34.5%;
+  @media only screen and (max-width: 750px) {
+      margin-top: -39%;
+      margin-left: 32%;
+  }
+  @media only screen and (max-width: 530px) {
+     margin-left: 10%;
+     margin-top: -52%;
+  }
+  @media only screen and (max-width: 430px) {
+     margin-left: 3%;
+     margin-top: -62%;
+  }
+  img{
+      max-width: 341px;
+      max-height: 326px;
+  }
+}
+
+.signature-block{
+  padding-top: 30px;
+  img{
+      max-width: 100px;
+      text-align: center;
+  }
+  h2{
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: $font-sans-serif;
+      font-weight: 200;
+      letter-spacing: 1px;
+      margin-top: 10px;
+  }
+}
