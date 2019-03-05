@@ -1,17 +1,12 @@
-// .home {
-//   padding: 0 1rem;
-//   float: left;
-//   margin: 1rem 0; /* 16px /16 */
-//   font-size: 1em; /* 16px /16 */
-// }
-// .home :link:not(:hover) {
-//   text-decoration: none;
-// }
-
 .tmpl-home{
-  padding-left: 5%;
   display: flex;
   align-items: center;
+}
+
+.home-wrapper{
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 5%;
 }
 
 .hero h1{
@@ -23,6 +18,6 @@
 }
 
 .hero p{
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 0;
 }

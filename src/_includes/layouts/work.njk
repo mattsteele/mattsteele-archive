@@ -2,8 +2,8 @@
 layout: layouts/base.njk
 templateClass: tmpl-work
 ---
-<h1>{{ title }}</h1>
+<article>
+    <h2 class="work-entry-title">{{ title }}</h2>
 
-{{ content | safe }}
-
-<p><a href="{{ '/' | url }}">← Home</a></p>
+    {{ content | safe }}
+</article>

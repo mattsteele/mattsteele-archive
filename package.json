@@ -1,5 +1,5 @@
 {
-  "name": "matt-steele",
+  "name": "mattsteele.dev",
   "version": "1.0.0",
   "description": "Matt Steele - Web Application Developer in Denver, Colorado.",
   "scripts": {
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattsteele/matt-steele.git"
+    "url": "git://github.com/mattsteele/mattsteele.git"
   },
   "author": {
     "name": "Matt Steele",
-    "email": "matt@matt-steele.com",
-    "url": "https://matt-steele.com/"
+    "email": "matt@mattsteele.dev",
+    "url": "https://mattsteele.dev/"
   },
   "license": "MIT",
-  "homepage": "https://github.com/mattsteele/matt-steele#readme",
+  "homepage": "https://github.com/mattsteele/mattsteele#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
     "@11ty/eleventy-plugin-rss": "^1.0.6",

@@ -39,6 +39,12 @@ module.exports = function(eleventyConfig) {
     })
   })
 
+  eleventyConfig.addCollection('work', function(collection) {
+    return collection.getFilteredByTag('work').sort(function(a, b) {
+        return a.data.workorder - b.data.workorder
+    })
+  })
+
   // UNIVERSAL FILTERS:
   //// Custom filters to modify content.
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -131,6 +137,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownIt(options)
     .use(markdownItAnchor, opts)
   );
+
 
   return {
     templateFormats: [

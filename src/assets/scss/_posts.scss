@@ -1,17 +1,13 @@
-.postlist {
-  list-style: none;
-  padding: 0;
+.tmpl-post{
+  max-width: 1024px;
+  margin: 5.5em auto;
 }
-.postlist-item {
-  counter-increment: start-from -1;
+
+.tmpl-post-listing{
+  max-width: 1024px;
+  margin: 5.5em auto;
 }
-.postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
-  line-height: 100%;
-  text-align: right;
-}
+
 .postlist-date,
 .postlist-item:before {
   font-size: 0.8125em; /* 13px /16 */

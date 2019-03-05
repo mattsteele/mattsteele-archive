@@ -137,8 +137,8 @@ h6{
   }
 }
 
-ul li,
-ol li{
+main ul li,
+main ol li{
   a{
     color: inherit;
     text-decoration: none;
@@ -157,14 +157,14 @@ ol li{
 }
 
 
-ul{
+main ul{
   font-style: normal;
   li{
     padding-bottom: 20px;
   }
 }
 
-ol{
+main ol{
   font-weight: normal;
   li{
     padding-bottom: 20px;

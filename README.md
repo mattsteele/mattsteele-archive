@@ -2,14 +2,14 @@
 
 My personal site. A static site built using [11ty](https://github.com/11ty/eleventy) and [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
 
-Hosted on [Netlify](https://eleventy-base-blog.netlify.com/).
+Hosted on [Netlify](https://netlify.com/).
 
 ## To Start:
 
 ### 1. Clone this repository:
 
 ```
-git clone https://github.com/mattsteele/matt-steele.git
+git clone https://github.com/mattsteele/mattsteele.git
 ```
 
 

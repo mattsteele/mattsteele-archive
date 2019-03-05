@@ -2,14 +2,9 @@
 title: Articles
 navtitle: Articles
 navorder: 3
-tags:
-  - nav
 layout: layouts/base.njk
 permalink: /posts/
-templateClass: tmpl-posts
+templateClass: tmpl-post-listing
 ---
-
-<h1>Articles Listing</h1>
-
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}

@@ -44,7 +44,6 @@ Alternatively,
 
 If you want to embed images, this is how you do it:
 
-![Image of a donkey](/assets/images/donkey.jpg)
 
 # Structured documents
 

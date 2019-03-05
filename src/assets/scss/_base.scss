@@ -38,40 +38,15 @@ main{
   flex: 1;
 }
 
-
 p:last-child {
   margin-bottom: 0;
 }
 
-// p,
-// .tmpl-post li,
-//   img {
-//     max-width: 37.5em; /* 600px /16 */
-//   }
-// p,
-// .tmpl-post li {
-//   line-height: 1.45;
-// }
-// a[href] {
-//   color: var(--red-one);
-// }
-// a[href]:visited {
-//   color: var(--red-one);
-// }
-// main {
-//   padding: 1rem;
-// }
-// main :first-child {
-//   margin-top: 0;
-// }
-// header {
-//   border-bottom: 1px dashed var(--gray-one);
-// }
-// header:after {
-//   content: "";
-//   display: table;
-//   clear: both;
-// }
+.content-wrapper{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 pre,
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
