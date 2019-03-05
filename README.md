@@ -1,4 +1,4 @@
-# matt-steele
+# mattsteele
 
 My personal site. A static site built using [11ty](https://github.com/11ty/eleventy) and [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
 
@@ -16,7 +16,7 @@ git clone https://github.com/mattsteele/mattsteele.git
 ### 2. Navigate to the directory:
 
 ```
-cd matt-steele
+cd mattsteele
 ```
 
 ### 3. Install dependencies:

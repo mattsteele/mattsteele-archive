@@ -1,5 +1,5 @@
 {
-  "name": "mattsteele.dev",
+  "name": "mattsteele",
   "version": "1.0.0",
   "description": "Matt Steele - Web Application Developer in Denver, Colorado.",
   "scripts": {
@@ -7,8 +7,7 @@
     "start": "npm run build && npm run serve && ELEVENTY_ENV=dev eleventy --serve",
     "serve": "gulp watch & gulp serve",
     "dev": "gulp dev & ELEVENTY_ENV=dev eleventy --serve",
-    "build": "gulp build & ELEVENTY_ENV=dev eleventy",
-    "seed": "gulp build & ELEVENTY_ENV=seed eleventy"
+    "build": "NODE_ENV=prod gulp build"
   },
   "repository": {
     "type": "git",
