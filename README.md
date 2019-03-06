@@ -1,4 +1,6 @@
-# mattsteele
+# mattsteele.dev
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/21825428-ad07-4f65-b2a0-fd72783f8747/deploy-status)](https://app.netlify.com/sites/peaceful-albattani-1d96dc/deploys)
 
 My personal site. A static site built using [11ty](https://github.com/11ty/eleventy) and [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
 
@@ -32,8 +34,11 @@ npm run serve
 ```
 
 ### Todos:
-[] Add images in post directories
-[x] Allow navorder
-[x] set nav-item-active when visiting child links
-[x] Add Gulp asset pipeline
-[x] Add /feed.xml RSS
+- [] Add images in post directories
+- [] Style 404 page
+- [] Dial in small screen styles
+- [] Adjust brand colors for a11y
+- [x] Allow navorder
+- [x] set nav-item-active when visiting child links
+- [x] Add Gulp asset pipeline
+- [x] Add /feed.xml RSS
