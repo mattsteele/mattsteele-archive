@@ -41,7 +41,8 @@
     "markdown-it": "^8.4.1",
     "markdown-it-anchor": "^5.0.2",
     "pump": "^3.0.0",
-    "require-dir": "^1.2.0"
+    "require-dir": "^1.2.0",
+    "workbox-build": "^4.0.0"
   },
   "dependencies": {},
   "proxy": {

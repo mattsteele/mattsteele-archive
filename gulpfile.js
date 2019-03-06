@@ -28,9 +28,10 @@ gulp.task('assets', gulp.parallel(
 
 
 /*
-  Let's gwt the data we need and then build this sucker.
+  Let's get the data we need and then build this sucker.
 */
 gulp.task('build', gulp.series(
   'generate',
-  'assets'
+  'assets',
+  'workbox'
 ));
