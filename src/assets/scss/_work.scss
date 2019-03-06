@@ -1,15 +1,28 @@
 .tmpl-work{
   max-width: 1024px;
   margin: 5em auto;
+	@media only screen and (max-width: 960px) {
+		padding-left: 4%;
+    padding-right: 4%;
+    margin: 2em auto;
+	}
 }
 
 .tmpl-work-listing{
   max-width: 1010px;
   margin: 5em auto;
+	@media only screen and (max-width: 960px) {
+		padding-left: 4%;
+    padding-right: 4%;
+    margin: 2em auto;
+	}
 }
 
 .work-listing-item{
   margin-bottom: 8em;
+	@media only screen and (max-width: 960px) {
+		margin: 4em auto;
+	}
 }
 
 .work-listing-item > a{
@@ -25,19 +38,13 @@
   color: var(--red-one);
 }
 
-// .work-listing-item img{
-//   display: block;
-//   margin: 0 auto;
-// }
-
-// .single-work-item ol{
-//   margin-left: 20px;
-// }
-
 .work-entry-title{
   font-size: 44px;
   font-weight: 900;
   font-family: "Trebuchet MS",Trebuchet MS,sans-serif;
   color: var(--blue-one);
   text-align: center;
+	@media only screen and (max-width: 960px) {
+		font-size: 28px;
+	}
 }

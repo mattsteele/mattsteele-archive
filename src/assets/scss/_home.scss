@@ -6,6 +6,10 @@
 .home-wrapper{
   max-width: 1600px;
   margin: 0 auto;
+	@media only screen and (max-width: 960px) {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
 }
 
 .hero h1{
@@ -14,6 +18,9 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: .15em;
+	@media only screen and (max-width: 960px) {
+		font-size: 5em;
+	}
 }
 
 .hero p{

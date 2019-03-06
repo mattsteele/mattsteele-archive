@@ -34,11 +34,22 @@ header{
           width: 100%;
         }
       }
+      @media only screen and (max-width: 476px) {
+        margin-right: 2em;
+      }
     }
     .nav-item a[href]:not(:hover) {
       text-decoration: none;
     }
+    @media only screen and (max-width: 476px) {
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+    }
   }
+	@media only screen and (max-width: 960px) {
+    justify-content: center;
+	}
 }
 
 .main-nav > .nav-item:hover,

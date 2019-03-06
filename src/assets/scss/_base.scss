@@ -38,6 +38,12 @@ main{
   flex: 1;
 }
 
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -45,6 +51,13 @@ p:last-child {
 .content-wrapper{
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.mobile-wrapper{
+	@media only screen and (max-width: 960px) {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 }
 
 pre,
