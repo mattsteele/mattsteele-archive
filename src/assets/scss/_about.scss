@@ -16,7 +16,7 @@
   position: relative;
   margin: 0 auto;
   height: 422px;
-  width: 460px;
+  max-width: 460px;
   background: var(--blue-one);
   padding-top: 2em;
   padding-left: 2em;
@@ -43,9 +43,6 @@
     max-width: 341px;
     max-height: 326px;
   }
-	@media only screen and (max-width: 960px) {
-		width: auto;
-	}
 }
 
 
