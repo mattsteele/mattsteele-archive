@@ -1,8 +1,4 @@
-document.body.className = 'fade';
-document.body.classList.add('fade');
-
 // Register Service Worker
-
 if ('serviceWorker' in navigator) {
   if (window.env && window.env === 'dev') {
       console.info('skipping service worker registration in development.')
