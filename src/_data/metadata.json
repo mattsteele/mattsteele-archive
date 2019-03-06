@@ -1,16 +1,16 @@
 {
   "title": "Matt Steele",
-  "url": "https://matt-steele.com/",
+  "url": "https://mattsteele.dev/",
   "description": "Web Application Developer in Denver, Colorado.",
   "feed": {
     "subtitle": "Web Application Developer in Denver, Colorado.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "url": "https://matt-steele.com/feed/feed.xml",
-    "id": "https://matt-steele.com/"
+    "url": "https://mattsteele.dev/feed/feed.xml",
+    "id": "https://mattsteele.dev/"
   },
   "author": {
     "name": "Matt Steele",
-    "email": "matt@matt-steele.com"
+    "email": "matt@mattsteele.dev"
   }
 }
