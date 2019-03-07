@@ -6,6 +6,7 @@ work_with_title: Clover Partners
 work_with_url: https://clover.partners
 external_site_link: https://aceseditors.org/
 layout: layouts/work.njk
+excludeFromSitemap: true
 ---
 
 ![{{work_with_title}}](/assets/images/work-images/{{ featured_image }})

@@ -5,6 +5,7 @@ date: 2018-05-01
 tags:
   - best-tag
 layout: layouts/post.njk
+excludeFromSitemap: true
 ---
 
 # This is an h1 tag

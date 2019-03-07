@@ -6,6 +6,7 @@ work_with_title: Brand Iron
 work_with_url: https://brandiron.net
 external_site_link: https://acewealthpartners.com/
 layout: layouts/work.njk
+excludeFromSitemap: true
 ---
 ![{{work_with_title}}](/assets/images/work-images/{{ featured_image }})
 
