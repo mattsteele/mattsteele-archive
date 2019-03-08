@@ -1,10 +1,19 @@
+.tmpl-testimonials{
+    margin: 8em auto;
+    @media only screen and (max-width: 960px) {
+      padding-left: 4%;
+      padding-right: 4%;
+      margin: 0 auto;
+    }
+}
+
 .testimonial-wrapper{
-    margin: 0;
-    border-radius: 5px;
-    padding: 80px 0 60px 0;
-  @media only screen and (max-width: 825px) {
-    padding: 4px 0 30px 0;
-  }
+    margin: 8em auto;
+    @media only screen and (max-width: 960px) {
+      padding-left: 4%;
+      padding-right: 4%;
+      margin: 1.5em auto;
+    }
 }
 
 .testimonial-odd{
