@@ -12,6 +12,13 @@
 	}
 }
 
+.hero {
+  @media only screen and (max-width: 600px) {
+    margin-top: 1;
+    margin-bottom: 1em;
+  }
+}
+
 .hero h1{
   font-size: 6em;
   font-family: 'Trebuchet MS', Trebuchet MS, sans-serif;
