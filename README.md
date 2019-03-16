@@ -35,8 +35,8 @@ npm run serve
 
 ### Todos:
 - [] Add images in post directories
-- [] Style 404 page
-- [] Dial in small screen styles
+- [x] Style 404 page
+- [x] Dial in small screen styles
 - [] Adjust brand colors for a11y
 - [x] Allow navorder
 - [x] set nav-item-active when visiting child links
