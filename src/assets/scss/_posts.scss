@@ -1,29 +1,29 @@
-.tmpl-post{
-  max-width: 1024px;
-  margin: 5.5em auto;
+.tmpl-post {
+	max-width: 1024px;
+	margin: 5.5em auto;
 }
 
-.tmpl-post-listing{
-  max-width: 1024px;
-  margin: 5.5em auto;
+.tmpl-post-listing {
+	max-width: 1024px;
+	margin: 5.5em auto;
 }
 
 .postlist-date,
 .postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
-  color: var(--darkgray);
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--darkgray);
 }
 .postlist-date {
-  word-spacing: -0.5px;
+	word-spacing: -0.5px;
 }
 .postlist-link {
-  display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+	display: inline-block;
+	padding: 0.25em 0.1875em; /* 4px 3px /16 */
 }
 .postlist-item-active .postlist-link {
-  font-weight: bold;
+	font-weight: bold;
 }
 .tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
-  font-weight: 700;
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
 }

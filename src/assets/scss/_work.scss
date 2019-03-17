@@ -1,49 +1,49 @@
-.tmpl-work{
-  max-width: 1024px;
-  margin: 5em auto;
+.tmpl-work {
+	max-width: 1024px;
+	margin: 5em auto;
 	@media only screen and (max-width: 960px) {
 		padding-left: 4%;
-    padding-right: 4%;
-    margin: 1.5em auto;
+		padding-right: 4%;
+		margin: 1.5em auto;
 	}
 }
 
-.tmpl-work-listing{
-  max-width: 1010px;
-  margin: 5em auto;
+.tmpl-work-listing {
+	max-width: 1010px;
+	margin: 5em auto;
 	@media only screen and (max-width: 960px) {
 		padding-left: 4%;
-    padding-right: 4%;
-    margin: 1.5em auto 2em auto;
+		padding-right: 4%;
+		margin: 1.5em auto 2em auto;
 	}
 }
 
-.work-listing-item{
-  margin-bottom: 8em;
+.work-listing-item {
+	margin-bottom: 8em;
 	@media only screen and (max-width: 960px) {
 		margin: 1.5em auto 4em auto;
 	}
 }
 
-.work-listing-item > a{
-  display: block;
-  text-decoration: none;
+.work-listing-item > a {
+	display: block;
+	text-decoration: none;
 }
 
-.work-listing-item a:hover img{
-  opacity: .7;
+.work-listing-item a:hover img {
+	opacity: .7;
 }
 
-.work-listing-item a:hover h2{
-  color: var(--red-one);
+.work-listing-item a:hover h2 {
+	color: var(--red-one);
 }
 
-.work-entry-title{
-  font-size: 44px;
-  font-weight: 900;
-  font-family: "Trebuchet MS",Trebuchet MS,sans-serif;
-  color: var(--blue-one);
-  text-align: center;
+.work-entry-title {
+	font-size: 44px;
+	font-weight: 900;
+	font-family: "Trebuchet MS", Trebuchet MS, sans-serif;
+	color: var(--blue-one);
+	text-align: center;
 	@media only screen and (max-width: 960px) {
 		font-size: 28px;
 	}

@@ -33,11 +33,10 @@ npm run serve
 ```
 
 ### Todos:
-- [] Add images in post directories
 - [x] Style 404 page
 - [x] Dial in small screen styles
-- [] Adjust brand colors for a11y
 - [x] Allow navorder
 - [x] set nav-item-active when visiting child links
 - [x] Add Gulp asset pipeline
 - [x] Add /feed.xml RSS
+- [] Do I want a blog? If so, add images in post directories

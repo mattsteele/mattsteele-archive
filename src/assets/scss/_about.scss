@@ -1,66 +1,66 @@
-.tmpl-about{
-  max-width: 1024px;
-  margin: 8em auto;
+.tmpl-about {
+	max-width: 1024px;
+	margin: 8em auto;
 	@media only screen and (max-width: 960px) {
 		padding-left: 4%;
-    padding-right: 4%;
-    margin: 3.3em auto;
+		padding-right: 4%;
+		margin: 3.3em auto;
 	}
 }
 
-.floating-box__wrapper{
-  margin-bottom: 5em;
+.floating-box__wrapper {
+	margin-bottom: 5em;
 }
 
-.floating-box{
-  position: relative;
-  margin: 0 auto;
-  height: 422px;
-  max-width: 460px;
-  background: var(--blue-one);
-  padding-top: 2em;
-  padding-left: 2em;
-  h2{
-    color: white;
-    font-family: $font-sans-serif;
-    text-transform: uppercase;
-    margin-bottom: .25em;
-    font-weight: 200;
-    letter-spacing: 2px;
-    font-size: 26px;
-  }
-  h3{
-    color: white;
-    font-family: $font-sans-serif;
-    margin-top: 0;
-    font-size: 16px;
-    font-weight: 200;
-  }
-  img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 341px;
-    max-height: 326px;
-  }
+.floating-box {
+	position: relative;
+	margin: 0 auto;
+	height: 422px;
+	max-width: 460px;
+	background: var(--blue-one);
+	padding-top: 2em;
+	padding-left: 2em;
+	h2 {
+		color: white;
+		font-family: $font-sans-serif;
+		text-transform: uppercase;
+		margin-bottom: .25em;
+		font-weight: 200;
+		letter-spacing: 2px;
+		font-size: 26px;
+	}
+	h3 {
+		color: white;
+		font-family: $font-sans-serif;
+		margin-top: 0;
+		font-size: 16px;
+		font-weight: 200;
+	}
+	img {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		max-width: 341px;
+		max-height: 326px;
+	}
 }
 
-.about-content__wrapper{
-  max-width: 900px;
+.about-content__wrapper {
+	max-width: 900px;
 }
 
-.signature-block{
-  padding-top: 2em;
-  img{
-      max-width: 100px;
-      text-align: center;
-  }
-  h2{
-      text-transform: uppercase;
-      font-size: 20px;
-      font-family: $font-sans-serif;
-      font-weight: 400;
-      letter-spacing: 1px;
-      margin-top: 10px;
-  }
+.signature-block {
+	padding-top: 2em;
+	img {
+		max-width: 100px;
+		text-align: center;
+	}
+	h2 {
+		text-transform: uppercase;
+		font-size: 20px;
+		font-family: $font-sans-serif;
+		font-weight: 400;
+		letter-spacing: 1px;
+		margin-top: 10px;
+	}
 }

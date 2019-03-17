@@ -1,43 +1,43 @@
 .tag {
-  display: inline-block;
-  vertical-align: text-top;
-  text-transform: uppercase;
-  font-size: 0.625em; /* 10px /16 */
-  padding: 2px 4px;
-  margin-left: 0.8em; /* 8px /10 */
-  background-color: var(--red-two);
-  color: var(--white);
-  border-radius: 0.25em; /* 3px /12 */
-  text-decoration: none;
+	display: inline-block;
+	vertical-align: text-top;
+	text-transform: uppercase;
+	font-size: 0.625em; /* 10px /16 */
+	padding: 2px 4px;
+	margin-left: 0.8em; /* 8px /10 */
+	background-color: var(--red-two);
+	color: var(--white);
+	border-radius: 0.25em; /* 3px /12 */
+	text-decoration: none;
 }
 a[href].tag,
 a[href].tag:visited {
-  color: #fff;
+	color: #fff;
 }
 
 /* Warning */
 .warning {
-  background-color: #ffc;
-  padding: 1em 0.625em; /* 16px 10px /16 */
+	background-color: #ffc;
+	padding: 1em 0.625em; /* 16px 10px /16 */
 }
 .warning ol:only-child {
-  margin: 0;
+	margin: 0;
 }
 
 /* Direct Links / Markdown Headers */
 .direct-link {
-  font-family: sans-serif;
-  text-decoration: none;
-  font-style: normal;
-  margin-left: .1em;
+	font-family: sans-serif;
+	text-decoration: none;
+	font-style: normal;
+	margin-left: .1em;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
-  color: transparent;
+	color: transparent;
 }
 a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
-  color: #aaa;
+	color: #aaa;
 }

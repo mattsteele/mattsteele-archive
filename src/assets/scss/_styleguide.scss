@@ -1,49 +1,49 @@
-.tmpl-styleguide{
-  max-width: 1024px;
-  margin: 6em auto;
+.tmpl-styleguide {
+	max-width: 1024px;
+	margin: 6em auto;
 }
 
-.section__color{
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 4em;
+.section__color {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 4em;
 }
 
-.color-chip-wrapper{
-  margin: 0 auto;
-  border: 1px solid var(--gray-two);
-  padding: 1em;
+.color-chip-wrapper {
+	margin: 0 auto;
+	border: 1px solid var(--gray-two);
+	padding: 1em;
 }
 
-.color-chip{
-  height: 130px;
-  width: 130px;
-  margin: 0 auto;
+.color-chip {
+	height: 130px;
+	width: 130px;
+	margin: 0 auto;
 }
 
-.blue-one-chip{
-  background-color: var(--blue-one);
+.blue-one-chip {
+	background-color: var(--blue-one);
 }
-.blue-two-chip{
-  background-color: var(--blue-two);
+.blue-two-chip {
+	background-color: var(--blue-two);
 }
-.blue-three-chip{
-  background-color: var(--blue-three);
+.blue-three-chip {
+	background-color: var(--blue-three);
 }
-.blue-four-chip{
-  background-color: var(--blue-four);
-}
-
-.red-one-chip{
-  background-color: var(--red-one);
-}
-.red-two-chip{
-  background-color: var(--red-two);
+.blue-four-chip {
+	background-color: var(--blue-four);
 }
 
-.gray-one-chip{
-  background-color: var(--gray-one);
+.red-one-chip {
+	background-color: var(--red-one);
 }
-.gray-two-chip{
-  background-color: var(--gray-two);
+.red-two-chip {
+	background-color: var(--red-two);
+}
+
+.gray-one-chip {
+	background-color: var(--gray-one);
+}
+.gray-two-chip {
+	background-color: var(--gray-two);
 }

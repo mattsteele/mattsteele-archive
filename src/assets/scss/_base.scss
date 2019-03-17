@@ -1,59 +1,58 @@
 :root {
-  --body: #f7f7f9;
+	--body: #f7f7f9;
 
-  --blue-one: #1E2E3E;
-  --blue-two: #507796;
-  --blue-three: #2A94C8;
-  --blue-four: #1E2E3E;
+	--blue-one: #1e2e3e;
+	--blue-two: #507796;
+	--blue-three: #2a94c8;
+	--blue-four: #1e2e3e;
 
-  --red-one: #B33D40;
-  --red-two: #D1625B;
+	--red-one: #b33d40;
+	--red-two: #d1625b;
 
-  --gray-one: #e0e0e0;
-  --gray-two: #BDC3C7;
+	--gray-one: #e0e0e0;
+	--gray-two: #bdc3c7;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 
 html,
 body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  color: #363636;
-  background-color: var(--body);
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	color: #363636;
+	background-color: var(--body);
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-main{
-  flex: 1;
+main {
+	flex: 1;
 }
 
 img {
-  border-style: none;
-  max-width: 100%;
-  height: auto;
+	border-style: none;
+	max-width: 100%;
+	height: auto;
 }
 
 p:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
-.content-wrapper{
-  max-width: 1024px;
-  margin: 0 auto;
+.content-wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
-.mobile-wrapper{
+.mobile-wrapper {
 	@media only screen and (max-width: 960px) {
 		padding-left: 2%;
 		padding-right: 2%;
@@ -62,60 +61,62 @@ p:last-child {
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-  line-height: 1.5;
+	font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
+		"DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier,
+		monospace;
+	line-height: 1.5;
 }
 pre {
-  font-size: 14px;
-  line-height: 1.375;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  padding: 1em;
-  margin: .5em 0;
-  background-color: #f6f6f6;
+	font-size: 14px;
+	line-height: 1.375;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	padding: 1em;
+	margin: .5em 0;
+	background-color: #f6f6f6;
 }
 .highlight-line {
-  display: block;
-  padding: 0.125em 1em;
-  text-decoration: none; /* override del, ins, mark defaults */
-  color: inherit; /* override del, ins, mark defaults */
+	display: block;
+	padding: 0.125em 1em;
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }
 
 /* allow highlighting empty lines */
 .highlight-line:empty:before {
-  content: " ";
+	content: " ";
 }
 /* avoid double line breaks when using display: block; */
 .highlight-line + br {
-  display: none;
+	display: none;
 }
 
 .highlight-line-isdir {
-  color: #b0b0b0;
-  background-color: #222;
+	color: #b0b0b0;
+	background-color: #222;
 }
 .highlight-line-active {
-  background-color: #444;
-  background-color: hsla(0, 0%, 27%, .8);
+	background-color: #444;
+	background-color: hsla(0, 0%, 27%, .8);
 }
 .highlight-line-add {
-  background-color: #45844b;
+	background-color: #45844b;
 }
 .highlight-line-remove {
-  background-color: #902f2f;
+	background-color: #902f2f;
 }
 
-.four-oh-four{
-  text-align: center;
-  margin: 7em auto;
+.four-oh-four {
+	text-align: center;
+	margin: 7em auto;
 }
