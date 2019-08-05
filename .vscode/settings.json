@@ -10,7 +10,6 @@
         "textLink.foreground": "#00BCD4",
         "progressBar.background": "#00BCD4",
         "pickerGroup.foreground": "#00BCD4",
-        "tab.activeBorder": "#00BCD4",
         "notificationLink.foreground": "#00BCD4",
         "editorWidget.resizeBorder": "#00BCD4",
         "editorWidget.border": "#00BCD4",
@@ -19,6 +18,19 @@
         "panelTitle.activeBorder": "#00BCD4",
         "breadcrumb.activeSelectionForeground": "#00BCD4",
         "menu.selectionForeground": "#00BCD4",
-        "menubar.selectionForeground": "#00BCD4"
-    }
+        "menubar.selectionForeground": "#00BCD4",
+        "activityBar.background": "#c75c5e",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#72ce71",
+        "activityBarBadge.foreground": "#15202b",
+        "titleBar.activeBackground": "#b33d40",
+        "titleBar.inactiveBackground": "#b33d4099",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "statusBar.background": "#b33d40",
+        "statusBarItem.hoverBackground": "#c75c5e",
+        "statusBar.foreground": "#e7e7e7"
+    },
+    "peacock.color": "#b33d40"
 }
