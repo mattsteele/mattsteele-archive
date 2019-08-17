@@ -8,6 +8,19 @@
 	}
 }
 
+.note {
+  background-color: rgba(80, 119, 150, .10);
+  padding: 2rem;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-left: 10px solid var(--red-one);
+  margin-bottom: 5rem;
+  p {
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
 .tmpl-work-listing {
 	max-width: 1010px;
 	margin: 5em auto;
