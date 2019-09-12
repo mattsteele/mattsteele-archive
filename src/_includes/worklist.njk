@@ -5,7 +5,7 @@
   <section class="work-listing-item">
     <a href="{{ work.url | url }}">
       <h2 class="work-entry-title">{% if work.data.title %}{{ work.data.title }}{% else %}<code>{{ work.url }}</code>{% endif %}</h2>
-      <img src="/assets/images/work-images/{{ work.data.featured_image }}" alt="{{ work.data.title }}">
+      <img loading="lazy" src="/assets/images/work-images/{{ work.data.featured_image }}" alt="{{ work.data.title }}">
     </a>
     <p class="work-meta">Work done with <a href="{{ work.data.work_with_url }}" target="_blank" rel="noopener noreferrer">{{ work.data.work_with_title }}</a></p>
   </section>
