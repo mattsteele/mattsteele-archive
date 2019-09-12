@@ -1,7 +1,8 @@
 ---
-title: JavaScript: Set Vs. Weakset.
+title: JavaScript - Set Vs. Weakset.
 description: What is the difference between Set & Weakset?
 date: 2019-09-05
+tags:
   - javascript
 layout: layouts/post.njk
 excludeFromSitemap: true

@@ -1,7 +1,8 @@
 ---
-title: JavaScript: Closures & Environment.
+title: JavaScript - Closures & Environment.
 description: Explain Closure & the JS Environment.
 date: 2019-09-03
+tags:
   - javascript
 layout: layouts/post.njk
 excludeFromSitemap: true

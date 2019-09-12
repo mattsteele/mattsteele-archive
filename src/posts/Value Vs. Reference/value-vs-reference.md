@@ -1,7 +1,8 @@
 ---
-title: JavaScript: Value Vs. Reference.
+title: JavaScript - Value Vs. Reference.
 description: What is the difference between value & reference types?
 date: 2019-09-06
+tags:
   - javascript
 layout: layouts/post.njk
 excludeFromSitemap: true

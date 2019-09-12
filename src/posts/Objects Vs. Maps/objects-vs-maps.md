@@ -1,7 +1,8 @@
 ---
-title: JavaScript: Objects Vs. Maps.
+title: JavaScript - Objects Vs. Maps.
 description: What is the difference between Objects & Maps?
 date: 2019-09-04
+tags:
   - javascript
 layout: layouts/post.njk
 excludeFromSitemap: true

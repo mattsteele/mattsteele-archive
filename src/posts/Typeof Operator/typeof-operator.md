@@ -1,7 +1,8 @@
 ---
-title: JavaScript: Typeof Operator.
+title: JavaScript - Typeof Operator.
 description: Explain the Typeof Operator.
 date: 2019-09-06
+tags:
   - javascript
 layout: layouts/post.njk
 excludeFromSitemap: true

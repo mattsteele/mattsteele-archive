@@ -1,5 +1,5 @@
 ---
-title: JavaScript: Arrays Vs. Objects.
+title: JavaScript - Arrays Vs. Objects.
 description: What is the difference between Arrays & Objects?
 date: 2019-09-01
 tags:

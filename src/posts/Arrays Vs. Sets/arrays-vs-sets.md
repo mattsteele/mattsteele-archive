@@ -1,5 +1,5 @@
 ---
-title: JavaScript: Arrays Vs. Sets.
+title: JavaScript - Arrays Vs. Sets.
 description: What is the difference between Arrays & Sets?
 date: 2019-09-02
 tags:
