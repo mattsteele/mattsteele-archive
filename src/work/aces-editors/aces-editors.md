@@ -1,5 +1,5 @@
 ---
-date: 2019-01-01
+date: 2019-01-1
 title: ACES | International Society of Editors
 featured_image: aces-featured.jpg
 work_with_title: Clover Partners

@@ -5,6 +5,7 @@ templateClass: tmpl-work
 
 <article>
     <h2 class="work-entry-title">{{ title }}</h2>
+    <h2 class="work-entry-time">{{ date.toISOString().split('T')[0] }}</h2>
 
     {{ content | safe }}
 </article>
