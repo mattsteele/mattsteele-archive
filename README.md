@@ -4,7 +4,6 @@
 
 My [personal website](https://mattsteele.dev). A static site built using [11ty](https://github.com/11ty/eleventy) &amp; hosted on [Netlify](https://netlify.com/).
 
-
 ## To Start:
 
 ### 1. Clone this repository:
@@ -12,7 +11,6 @@ My [personal website](https://mattsteele.dev). A static site built using [11ty](
 ```
 git clone https://github.com/mattsteele/mattsteele.git
 ```
-
 
 ### 2. Navigate to the directory:
 
@@ -27,8 +25,8 @@ npm install
 ```
 
 # Switch to Node 10.16
-nvm use 10.16
 
+nvm use 10.16
 
 ### 5. Build, serve & watch:
 
@@ -37,6 +35,7 @@ npm run serve
 ```
 
 ### Todos:
+
 - [x] Style 404 page
 - [x] Dial in small screen styles
 - [x] Allow navorder
