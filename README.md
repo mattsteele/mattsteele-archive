@@ -36,10 +36,5 @@ npm run serve
 
 ### Todos:
 
-- [x] Style 404 page
-- [x] Dial in small screen styles
-- [x] Allow navorder
-- [x] set nav-item-active when visiting child links
-- [x] Add Gulp asset pipeline
-- [x] Add /feed.xml RSS
+- [] Use Inter font?
 - [] Do I want a blog? If so, add images in post directories
