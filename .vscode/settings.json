@@ -20,6 +20,7 @@
         "menu.selectionForeground": "#00BCD4",
         "menubar.selectionForeground": "#00BCD4",
         "activityBar.background": "#c75c5e",
+        "activityBar.activeBackground": "#c75c5e",
         "activityBar.activeBorder": "#72ce71",
         "activityBar.foreground": "#e7e7e7",
         "activityBar.inactiveForeground": "#e7e7e799",
