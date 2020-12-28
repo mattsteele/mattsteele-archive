@@ -7,7 +7,8 @@
     "start": "npm run build && npm run serve && ELEVENTY_ENV=dev eleventy --serve",
     "serve": "gulp watch & gulp serve",
     "dev": "gulp dev & ELEVENTY_ENV=dev eleventy --serve",
-    "build": "NODE_ENV=prod gulp build"
+    "build": "NODE_ENV=prod gulp build",
+    "unlock": "rm -rf node_modules && rm -rf package-lock.json && npm cache clean --force && npm i"
   },
   "repository": {
     "type": "git",
