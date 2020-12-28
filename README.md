@@ -24,9 +24,9 @@ cd mattsteele
 npm install
 ```
 
-# Switch to Node 10.16
+# Switch to Node 10
 
-nvm use 10.16
+nvm use node 10
 
 ### 5. Build, serve & watch:
 
