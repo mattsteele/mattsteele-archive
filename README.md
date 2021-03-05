@@ -31,7 +31,7 @@ nvm use node 10
 ### 5. Build, serve & watch:
 
 ```
-npm run serve
+npm run dev
 ```
 
 ### Todos:

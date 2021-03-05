@@ -19,6 +19,7 @@
             {%- set isParent = nav.url != '/' and nav.url in page.url -%}
           <li class="nav-item{% if isCurrent or isParent %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
           {%- endfor -%}
+          <li class="nav-item"><a href="https://resume.mattsteele.dev">Resume</a></li>
         </ul>
       </nav>
     </header>
