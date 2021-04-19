@@ -24,14 +24,10 @@ cd mattsteele
 npm install
 ```
 
-# Switch to Node 10
-
-nvm use node 10
-
 ### 5. Build, serve & watch:
 
 ```
-npm run dev
+npm run start
 ```
 
 ### Todos:
