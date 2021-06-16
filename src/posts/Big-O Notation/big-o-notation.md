@@ -1,13 +1,13 @@
 ---
-title: JavaScript - Arrays Vs. Objects.
-description: What is the difference between Arrays & Objects?
-date: 2019-09-01
+title: Big O Notation
+description: Big O notation explained
+date: 2021-04-19
 tags:
-  - javascript
+	- Data Structures & Algorithms
 layout: layouts/post.njk
 excludeFromSitemap: true
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+## What is Good Code?
 
 ``` js/2/4
 // this is a command
