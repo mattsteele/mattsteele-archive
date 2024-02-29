@@ -4,21 +4,23 @@
 
 My [personal website](https://mattsteele.dev). A static site built using [11ty](https://github.com/11ty/eleventy) &amp; hosted on [Netlify](https://netlify.com/).
 
-## To Start:
+### 1. Switch to NPM 10:
 
-### 1. Clone this repository:
+`$ nvm use 10`
+
+### 2. Clone this repository:
 
 ```
 git clone https://github.com/mattsteele/mattsteele.git
 ```
 
-### 2. Navigate to the directory:
+### 3. Navigate to the directory:
 
 ```
 cd mattsteele
 ```
 
-### 3. Install dependencies:
+### 4. Install dependencies:
 
 ```
 npm install
