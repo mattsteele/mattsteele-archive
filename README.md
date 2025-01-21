@@ -31,8 +31,3 @@ npm install
 ```
 npm run start
 ```
-
-### Todos:
-
-- [] Use Inter font?
-- [] Do I want a blog? If so, add images in post directories.
