@@ -1,3 +1,5 @@
+{#
+uncomment to add it back to the nav
 ---
 title: Work
 navtitle: Work
@@ -7,6 +9,7 @@ tags:
 layout: layouts/base.njk
 permalink: /work/
 templateClass: tmpl-work-listing
----
+excludeFromSitemap: true
+---  #}
 {% set worklist = collections.work %}
 {% include "worklist.njk" %}
