@@ -1,6 +1,6 @@
 # mattsteele - archive
 
-My old, archived [personal website](https://mattsteele.dev). A static site built using [11ty](https://github.com/11ty/eleventy) &amp; hosted on [Netlify](https://netlify.com/).
+My old, archived, [personal website](https://mattsteele.dev). A static site built using [11ty](https://github.com/11ty/eleventy) &amp; hosted on [Netlify](https://netlify.com/).
 
 ### 1. Switch to NPM 10:
 
