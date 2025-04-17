@@ -1,7 +1,5 @@
 # mattsteele - archive
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/21825428-ad07-4f65-b2a0-fd72783f8747/deploy-status)](https://app.netlify.com/sites/peaceful-albattani-1d96dc/deploys)
-
 My [personal website](https://mattsteele.dev). A static site built using [11ty](https://github.com/11ty/eleventy) &amp; hosted on [Netlify](https://netlify.com/).
 
 ### 1. Switch to NPM 10:
